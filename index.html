@@ -6,53 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Exercise</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <style>
-      .nav-background {
-        background-color: rgba(0, 198, 0, 0.75);
-      }
-      .carousel-customise img {
-        max-width: 1440px;
-        max-height: 640px;
-        object-fit: cover;
-      }
-      .overlay::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-      .carousel-customise button {
-        color: rgb(0, 254, 0);
-        border: 1px solid rgb(0, 254, 0);
-      }
-      .carousel-customise button:hover {
-        background-color: rgb(0, 198, 0);
-      }
-      .customise-btn {
-        width: 100%;
-        background-color: rgb(0, 198, 0);
-        border: none;
-      }
-      .my-card {
-        max-width: 700px;
-      }
-      .image-container {
-        max-width: 960px;
-      }
-      .my-card-two {
-        width: 280px;
-      }
-      .card-container-two {
-        max-width: 900px;
-      }
-      .round-image {
-        width: 200px;
-        height: 200px;
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
@@ -435,22 +389,6 @@
 
     <!-- javascript file -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script>
-      let nav = document.querySelector("nav");
-      window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 50) {
-          nav.classList.add("nav-background", "shadow");
-        } else {
-          nav.classList.remove("nav-background", "shadow");
-        }
-      });
-
-      let priceRange = document.getElementById("priceRange");
-      let priceValue = document.getElementById("priceValue");
-
-      priceRange.oninput = function () {
-        priceValue.innerHTML = "$" + this.value;
-      };
-    </script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
