@@ -1,8 +1,13 @@
-.nav-background {
+* {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+  .nav-background {
     background-color: rgba(0, 198, 0, 0.75);
+    transition: all 0.5s ease-in-out;
   }
   .carousel-customise img {
-    max-width: 1440px;
+    max-width: 100%;
     max-height: 640px;
     object-fit: cover;
   }
@@ -27,19 +32,29 @@
     background-color: rgb(0, 198, 0);
     border: none;
   }
-  .my-card {
+  .customise-card {
     max-width: 700px;
   }
-  .image-container {
-    max-width: 960px;
-  }
-  .my-card-two {
+
+  .customise-card-two {
     width: 280px;
   }
-  .card-container-two {
-    max-width: 900px;
-  }
+ 
   .round-image {
     width: 200px;
     height: 200px;
+  }
+  .to-top {
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+  }
+  .to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
   }
